@@ -153,8 +153,10 @@ CMakeFiles/SnakeGame.dir/Food.cpp.obj
 
 CMakeFiles/SnakeGame.dir/Game.cpp.obj
  D:/GameDesign/pbl3/SnakeGame/Game.cpp
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/algorithm
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/backward/binders.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bit
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/algorithmfwd.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/alloc_traits.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/allocator.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/basic_string.h
@@ -194,16 +196,19 @@ CMakeFiles/SnakeGame.dir/Game.cpp.obj
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/specfun.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/std_abs.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/std_thread.h
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_algo.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_algobase.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_bvector.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_construct.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_deque.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_function.h
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_heap.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_iterator.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_iterator_base_funcs.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_iterator_base_types.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_numeric.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_pair.h
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_tempbuf.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_uninitialized.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_vector.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/string_view.tcc
@@ -243,6 +248,7 @@ CMakeFiles/SnakeGame.dir/Game.cpp.obj
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/numeric
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/optional
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/pstl/execution_defs.h
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/pstl/glue_algorithm_defs.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/pstl/glue_numeric_defs.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/pstl/pstl_config.h
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/random

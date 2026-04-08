@@ -41,6 +41,9 @@ private:
 
     bool HitsWall(const Point& p) const;
     void Reset();
+    int GetDifficultyLevel() const;
+    std::string GetDifficultyName() const;
+    int GetFrameDelayMs() const;
 
     GameState BuildState() const;
     bool ApplyState(const GameState& state);

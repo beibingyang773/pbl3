@@ -9,7 +9,14 @@ class Renderer {
 public:
     Renderer(int width, int height);
 
-    void Draw(const Snake& snake, const Point& food, int score, bool paused, bool gameOver) const;
+    void Draw(
+        const Snake& snake,
+        const Point& food,
+        int score,
+        int difficultyLevel,
+        const std::string& difficultyName,
+        bool paused,
+        bool gameOver) const;
 
 private:
     int width_;

@@ -1,5 +1,6 @@
 #include "Game.h"
 
+#include <algorithm>
 #include <chrono>
 #include <thread>
 
@@ -16,8 +17,6 @@ Game::Game(int width, int height, std::string saveFile)
 void Game::Run() {
     status_ = Status::Running;
 
-    constexpr auto frameTime = std::chrono::milliseconds(120);
-
     while (status_ != Status::Quit) {
         const auto frameStart = std::chrono::steady_clock::now();
 
@@ -27,6 +26,7 @@ void Game::Run() {
         }
         Render();
 
+        const auto frameTime = std::chrono::milliseconds(GetFrameDelayMs());
         const auto elapsed = std::chrono::steady_clock::now() - frameStart;
         if (elapsed < frameTime) {
             std::this_thread::sleep_for(frameTime - elapsed);
@@ -102,7 +102,14 @@ void Game::Update() {
 void Game::Render() {
     const bool paused = (status_ == Status::Paused);
     const bool gameOver = (status_ == Status::GameOver);
-    renderer_.Draw(snake_, food_.GetPosition(), score_, paused, gameOver);
+    renderer_.Draw(
+        snake_,
+        food_.GetPosition(),
+        score_,
+        GetDifficultyLevel(),
+        GetDifficultyName(),
+        paused,
+        gameOver);
 }
 
 bool Game::HitsWall(const Point& p) const {
@@ -114,6 +121,32 @@ void Game::Reset() {
     food_.Respawn(snake_);
     score_ = 0;
     status_ = Status::Running;
+}
+
+int Game::GetDifficultyLevel() const {
+    const int level = 1 + score_ / 50;
+    return std::min(level, 5);
+}
+
+std::string Game::GetDifficultyName() const {
+    switch (GetDifficultyLevel()) {
+        case 1:
+            return "Easy";
+        case 2:
+            return "Normal";
+        case 3:
+            return "Hard";
+        case 4:
+            return "Expert";
+        default:
+            return "Nightmare";
+    }
+}
+
+int Game::GetFrameDelayMs() const {
+    // Increase speed as difficulty rises while keeping a safe lower bound.
+    const int delay = 140 - (GetDifficultyLevel() - 1) * 20;
+    return std::max(delay, 60);
 }
 
 GameState Game::BuildState() const {
