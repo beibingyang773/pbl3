@@ -6,13 +6,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(SnakeGame
-    main.cpp
-    Game.cpp
-    Snake.cpp
-    Food.cpp
-    Renderer.cpp
-    Input.cpp
-    SaveSystem.cpp
+    src/main.cpp
+    src/Game.cpp
+    src/Snake.cpp
+    src/Food.cpp
+    src/Renderer.cpp
+    src/Input.cpp
+    src/SaveSystem.cpp
 )
 
 if (WIN32)

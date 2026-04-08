@@ -1,6 +1,6 @@
-CMakeFiles/SnakeGame.dir/Snake.cpp.obj: \
- D:\GameDesign\pbl3\SnakeGame\Snake.cpp \
- D:\GameDesign\pbl3\SnakeGame\Snake.h \
+CMakeFiles/SnakeGame.dir/src/Snake.cpp.obj: \
+ D:\GameDesign\pbl3\SnakeGame\src\Snake.cpp \
+ D:\GameDesign\pbl3\SnakeGame\src\Snake.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/deque \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/requires_hosted.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \

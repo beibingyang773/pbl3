@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/GameDesign/pbl3/SnakeGame/Food.cpp" "CMakeFiles/SnakeGame.dir/Food.cpp.obj" "gcc" "CMakeFiles/SnakeGame.dir/Food.cpp.obj.d"
-  "D:/GameDesign/pbl3/SnakeGame/Game.cpp" "CMakeFiles/SnakeGame.dir/Game.cpp.obj" "gcc" "CMakeFiles/SnakeGame.dir/Game.cpp.obj.d"
-  "D:/GameDesign/pbl3/SnakeGame/Input.cpp" "CMakeFiles/SnakeGame.dir/Input.cpp.obj" "gcc" "CMakeFiles/SnakeGame.dir/Input.cpp.obj.d"
-  "D:/GameDesign/pbl3/SnakeGame/Renderer.cpp" "CMakeFiles/SnakeGame.dir/Renderer.cpp.obj" "gcc" "CMakeFiles/SnakeGame.dir/Renderer.cpp.obj.d"
-  "D:/GameDesign/pbl3/SnakeGame/SaveSystem.cpp" "CMakeFiles/SnakeGame.dir/SaveSystem.cpp.obj" "gcc" "CMakeFiles/SnakeGame.dir/SaveSystem.cpp.obj.d"
-  "D:/GameDesign/pbl3/SnakeGame/Snake.cpp" "CMakeFiles/SnakeGame.dir/Snake.cpp.obj" "gcc" "CMakeFiles/SnakeGame.dir/Snake.cpp.obj.d"
-  "D:/GameDesign/pbl3/SnakeGame/main.cpp" "CMakeFiles/SnakeGame.dir/main.cpp.obj" "gcc" "CMakeFiles/SnakeGame.dir/main.cpp.obj.d"
+  "D:/GameDesign/pbl3/SnakeGame/src/Food.cpp" "CMakeFiles/SnakeGame.dir/src/Food.cpp.obj" "gcc" "CMakeFiles/SnakeGame.dir/src/Food.cpp.obj.d"
+  "D:/GameDesign/pbl3/SnakeGame/src/Game.cpp" "CMakeFiles/SnakeGame.dir/src/Game.cpp.obj" "gcc" "CMakeFiles/SnakeGame.dir/src/Game.cpp.obj.d"
+  "D:/GameDesign/pbl3/SnakeGame/src/Input.cpp" "CMakeFiles/SnakeGame.dir/src/Input.cpp.obj" "gcc" "CMakeFiles/SnakeGame.dir/src/Input.cpp.obj.d"
+  "D:/GameDesign/pbl3/SnakeGame/src/Renderer.cpp" "CMakeFiles/SnakeGame.dir/src/Renderer.cpp.obj" "gcc" "CMakeFiles/SnakeGame.dir/src/Renderer.cpp.obj.d"
+  "D:/GameDesign/pbl3/SnakeGame/src/SaveSystem.cpp" "CMakeFiles/SnakeGame.dir/src/SaveSystem.cpp.obj" "gcc" "CMakeFiles/SnakeGame.dir/src/SaveSystem.cpp.obj.d"
+  "D:/GameDesign/pbl3/SnakeGame/src/Snake.cpp" "CMakeFiles/SnakeGame.dir/src/Snake.cpp.obj" "gcc" "CMakeFiles/SnakeGame.dir/src/Snake.cpp.obj.d"
+  "D:/GameDesign/pbl3/SnakeGame/src/main.cpp" "CMakeFiles/SnakeGame.dir/src/main.cpp.obj" "gcc" "CMakeFiles/SnakeGame.dir/src/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

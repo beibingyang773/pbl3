@@ -1,15 +1,16 @@
-CMakeFiles/SnakeGame.dir/Game.cpp.obj: \
- D:\GameDesign\pbl3\SnakeGame\Game.cpp \
- D:\GameDesign\pbl3\SnakeGame\Game.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/string \
+CMakeFiles/SnakeGame.dir/src/main.cpp.obj: \
+ D:\GameDesign\pbl3\SnakeGame\src\main.cpp \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/iostream \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/requires_hosted.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/pstl/pstl_config.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/ostream \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/ios \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/iosfwd \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stringfwd.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/memoryfwd.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/char_traits.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/postypes.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/cwchar \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/wchar.h \
@@ -25,27 +26,59 @@ CMakeFiles/SnakeGame.dir/Game.cpp.obj: \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/_mingw_stat64.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/swprintf.inl \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/type_traits \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/version.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/allocator.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/new_allocator.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/new \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/exception \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/exception.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/functexcept.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/version.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/exception_ptr.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/exception_defines.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/cxxabi_init_exception.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/stddef.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/typeinfo \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/hash_bytes.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/new \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/move.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/cpp_type_traits.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/type_traits \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/nested_exception.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/char_traits.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/localefwd.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/clocale \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/locale.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/crtdefs.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/stdio.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/iosfwd \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/cctype \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/ctype.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/ios_base.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/ext/atomicity.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/pthread.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/errno.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/sys/types.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/process.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/corecrt_startup.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/limits.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/signal.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/pthread_signal.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/time.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/sys/timeb.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/_timeval.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/pthread_time.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/pthread_compat.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/pthread_unistd.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/locale_classes.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/string \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/allocator.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/new_allocator.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/functexcept.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/cpp_type_traits.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/ostream_insert.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/cxxabi_forced.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
@@ -75,19 +108,14 @@ CMakeFiles/SnakeGame.dir/Game.cpp.obj: \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_construct.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/string_view \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/functional_hash.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/hash_bytes.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/string_view.tcc \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/ext/string_conversions.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/cstdlib \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/stdlib.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/limits.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/stdlib.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/malloc.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/errno.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/std_abs.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/cstdio \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/cerrno \
@@ -95,12 +123,29 @@ CMakeFiles/SnakeGame.dir/Game.cpp.obj: \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/basic_string.tcc \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/memory_resource.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/cstddef \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/stddef.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/uses_allocator.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/uses_allocator_args.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/tuple \
- D:\GameDesign\pbl3\SnakeGame\Food.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/locale_classes.tcc \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/system_error \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/stdexcept \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/streambuf \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/streambuf.tcc \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/basic_ios.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/locale_facets.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/cwctype \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/wctype.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/streambuf_iterator.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/locale_facets.tcc \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/basic_ios.tcc \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/ostream.tcc \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/istream \
+ C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/istream.tcc \
+ D:\GameDesign\pbl3\SnakeGame\src\Game.h \
+ D:\GameDesign\pbl3\SnakeGame\src\Food.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/random \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/cmath \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/math.h \
@@ -134,47 +179,12 @@ CMakeFiles/SnakeGame.dir/Game.cpp.obj: \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_numeric.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/pstl/glue_numeric_defs.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/pstl/execution_defs.h \
- D:\GameDesign\pbl3\SnakeGame\Snake.h \
+ D:\GameDesign\pbl3\SnakeGame\src\Snake.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/deque \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_deque.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/deque.tcc \
- D:\GameDesign\pbl3\SnakeGame\Input.h \
+ D:\GameDesign\pbl3\SnakeGame\src\Input.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/optional \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/exception \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/exception_ptr.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/cxxabi_init_exception.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/typeinfo \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/nested_exception.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/enable_special_members.h \
- D:\GameDesign\pbl3\SnakeGame\Renderer.h \
- D:\GameDesign\pbl3\SnakeGame\SaveSystem.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/algorithm \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_algo.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/algorithmfwd.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_heap.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_tempbuf.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/chrono \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/chrono.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/ratio \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/ctime \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/time.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/sys/timeb.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/_timeval.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/pthread_time.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/parse_numbers.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/thread \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/std_thread.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/unique_ptr.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/pthread.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/sys/types.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/process.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/corecrt_startup.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/signal.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/pthread_signal.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/pthread_compat.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/x86_64-w64-mingw32/include/pthread_unistd.h \
- C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/this_thread_sleep.h
+ D:\GameDesign\pbl3\SnakeGame\src\Renderer.h \
+ D:\GameDesign\pbl3\SnakeGame\src\SaveSystem.h

@@ -1,6 +1,6 @@
-CMakeFiles/SnakeGame.dir/Renderer.cpp.obj: \
- D:\GameDesign\pbl3\SnakeGame\Renderer.cpp \
- D:\GameDesign\pbl3\SnakeGame\Renderer.h \
+CMakeFiles/SnakeGame.dir/src/Renderer.cpp.obj: \
+ D:\GameDesign\pbl3\SnakeGame\src\Renderer.cpp \
+ D:\GameDesign\pbl3\SnakeGame\src\Renderer.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/string \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/requires_hosted.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -105,7 +105,7 @@ CMakeFiles/SnakeGame.dir/Renderer.cpp.obj: \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_vector.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_bvector.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/vector.tcc \
- D:\GameDesign\pbl3\SnakeGame\Snake.h \
+ D:\GameDesign\pbl3\SnakeGame\src\Snake.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/deque \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/stl_deque.h \
  C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/include/c++/14.2.0/bits/deque.tcc \
