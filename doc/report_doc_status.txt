@@ -1,2 +1,0 @@
-﻿chars=5379
-outfile=D:\GameDesign\pbl3\24280232_王俊达_代码分析报告.doc

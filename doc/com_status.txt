@@ -1,8 +1,0 @@
-﻿远程过程调用失败。 (异常来自 HRESULT:0x800706BE)
-所在位置 行:1 字符: 152
-+ ... ation; $word.Visible=$false; $doc=$word.Documents.Open($path); $txt=$ ...
-+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OperationStopped: (:) [], COMException
-    + FullyQualifiedErrorId : System.Runtime.InteropServices.COMException
- 
-
