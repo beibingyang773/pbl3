@@ -4,7 +4,7 @@
 # compile CXX with C:/Appzijian/MinGW/winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2/bin/c++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = @CMakeFiles/SnakeGame.dir/includes_CXX.rsp
 
 CXX_FLAGS = -std=c++17
 

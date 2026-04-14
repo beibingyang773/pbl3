@@ -1,6 +1,5 @@
 #include "Game.h"
 
-#include <algorithm>
 #include <chrono>
 #include <thread>
 
@@ -10,63 +9,97 @@ Game::Game(int width, int height, std::string saveFile)
       saveFile_(std::move(saveFile)),
       snake_(width / 2, height / 2),
       food_(width, height),
-      renderer_(width, height) {
+      renderSystem_(width, height) {
     food_.Respawn(snake_);
 }
 
 void Game::Run() {
-    status_ = Status::Running;
-
-    while (status_ != Status::Quit) {
-        const auto frameStart = std::chrono::steady_clock::now();
-
-        ProcessInput();
-        if (status_ == Status::Running) {
-            Update();
-        }
-        Render();
-
-        const auto frameTime = std::chrono::milliseconds(GetFrameDelayMs());
-        const auto elapsed = std::chrono::steady_clock::now() - frameStart;
-        if (elapsed < frameTime) {
-            std::this_thread::sleep_for(frameTime - elapsed);
-        }
-    }
+    gameLoop_.Run(
+        [this]() { return stateMachine_.GetState() != GameStatus::Exit; },
+        [this]() { ProcessInput(); },
+        [this]() { TickUpdate(); },
+        [this]() { Render(); });
 }
 
 void Game::ProcessInput() {
-    const InputEvent event = input_.Poll();
+    const FrameInput frameInput = inputSystem_.Collect(snake_.GetDirection());
 
-    if (event.action == InputAction::Quit) {
-        status_ = Status::Quit;
+    if (frameInput.requestQuit) {
+        stateMachine_.RequestExit();
         return;
     }
 
-    if (event.action == InputAction::TogglePause) {
-        if (status_ == Status::Running) {
-            status_ = Status::Paused;
-        } else if (status_ == Status::Paused) {
-            status_ = Status::Running;
+    if (frameInput.switchedMode.has_value()) {
+        if (*frameInput.switchedMode == InputExperimentMode::DirectInput) {
+            SetStatusMessage("Input mode switched: Direct", 150);
+        } else if (*frameInput.switchedMode == InputExperimentMode::InputQueue) {
+            SetStatusMessage("Input mode switched: Queue", 150);
+        } else {
+            SetStatusMessage("Input mode switched: Latest", 150);
         }
     }
 
-    if (event.action == InputAction::Save) {
-        const auto state = BuildState();
-        saveSystem_.SaveToText(saveFile_, state);
+    if (frameInput.requestToggleStressTest) {
+        const bool enabled = inputSystem_.ToggleStressTest();
+        SetStatusMessage(enabled ? "Stress test enabled" : "Stress test disabled", 150);
     }
 
-    if (event.action == InputAction::Load) {
+    if (frameInput.requestStartOrRestart) {
+        if (stateMachine_.GetState() == GameStatus::Menu || stateMachine_.GetState() == GameStatus::GameOver) {
+            Reset();
+            stateMachine_.StartFromMenuOrRestart();
+        }
+    }
+
+    if (frameInput.requestTogglePause) {
+        stateMachine_.TogglePause();
+    }
+
+    if (frameInput.requestSave && stateMachine_.GetState() != GameStatus::Menu) {
+        const auto state = BuildState();
+        if (saveSystem_.SaveToText(saveFile_, state)) {
+            SetStatusMessage("Save success", 120);
+        } else {
+            SetStatusMessage("Save failed", 180);
+        }
+    }
+
+    if (frameInput.requestLoad) {
         GameState state;
         if (saveSystem_.LoadFromText(saveFile_, state)) {
             if (ApplyState(state)) {
-                status_ = Status::Running;
+                stateMachine_.OnLoadSuccess();
+                SetStatusMessage("Load success", 120);
+            } else {
+                SetStatusMessage("Load failed: invalid state", 180);
             }
+        } else {
+            SetStatusMessage("Load failed: file damaged", 180);
         }
     }
 
-    if (event.direction.has_value() && status_ == Status::Running) {
-        snake_.SetDirection(*event.direction);
+    if (frameInput.direction.has_value() && stateMachine_.CanAcceptDirection()) {
+        snake_.SetDirection(*frameInput.direction);
     }
+}
+
+void Game::TickUpdate() {
+    const int ticks = timeSystem_.Step(stateMachine_.CanUpdate());
+    for (int i = 0; i < ticks; ++i) {
+        Update();
+        if (!stateMachine_.CanUpdate()) {
+            break;
+        }
+    }
+
+    if (statusMessageFrames_ > 0) {
+        --statusMessageFrames_;
+        if (statusMessageFrames_ == 0) {
+            statusMessage_.clear();
+        }
+    }
+
+    std::this_thread::sleep_for(std::chrono::milliseconds(1));
 }
 
 void Game::Update() {
@@ -92,24 +125,29 @@ void Game::Update() {
     if (willGrow) {
         score_ += 10;
         food_.Respawn(snake_);
+        timeSystem_.UpdateSpeedByScore(score_);
     }
 
     if (HitsWall(snake_.GetHead()) || snake_.HitsSelf()) {
-        status_ = Status::GameOver;
+        stateMachine_.OnSnakeDead();
     }
 }
 
 void Game::Render() {
-    const bool paused = (status_ == Status::Paused);
-    const bool gameOver = (status_ == Status::GameOver);
-    renderer_.Draw(
+    const GameStatus state = stateMachine_.GetState();
+    renderSystem_.Draw(
         snake_,
         food_.GetPosition(),
         score_,
-        GetDifficultyLevel(),
-        GetDifficultyName(),
-        paused,
-        gameOver);
+        timeSystem_.GetSpeedLevelNumber(),
+        timeSystem_.GetSpeedLevelName(),
+        inputSystem_.GetMode(),
+        inputSystem_.GetStats(),
+        inputSystem_.IsStressTestEnabled(),
+        statusMessage_,
+        state == GameStatus::Menu,
+        state == GameStatus::Paused,
+        state == GameStatus::GameOver);
 }
 
 bool Game::HitsWall(const Point& p) const {
@@ -117,36 +155,17 @@ bool Game::HitsWall(const Point& p) const {
 }
 
 void Game::Reset() {
+    inputSystem_.ResetStats();
     snake_ = Snake(width_ / 2, height_ / 2);
     food_.Respawn(snake_);
     score_ = 0;
-    status_ = Status::Running;
+    timeSystem_.UpdateSpeedByScore(score_);
+    SetStatusMessage("Game started", 90);
 }
 
-int Game::GetDifficultyLevel() const {
-    const int level = 1 + score_ / 50;
-    return std::min(level, 5);
-}
-
-std::string Game::GetDifficultyName() const {
-    switch (GetDifficultyLevel()) {
-        case 1:
-            return "Easy";
-        case 2:
-            return "Normal";
-        case 3:
-            return "Hard";
-        case 4:
-            return "Expert";
-        default:
-            return "Nightmare";
-    }
-}
-
-int Game::GetFrameDelayMs() const {
-    // Increase speed as difficulty rises while keeping a safe lower bound.
-    const int delay = 140 - (GetDifficultyLevel() - 1) * 20;
-    return std::max(delay, 60);
+void Game::SetStatusMessage(const std::string& message, int showFrames) {
+    statusMessage_ = message;
+    statusMessageFrames_ = showFrames;
 }
 
 GameState Game::BuildState() const {

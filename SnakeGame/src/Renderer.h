@@ -3,7 +3,8 @@
 #include <string>
 #include <vector>
 
-#include "Snake.h"
+#include "gameplay/Snake.h"
+#include "systems/InputSystem.h"
 
 class Renderer {
 public:
@@ -13,8 +14,13 @@ public:
         const Snake& snake,
         const Point& food,
         int score,
-        int difficultyLevel,
-        const std::string& difficultyName,
+        int speedLevel,
+        const std::string& speedName,
+        InputExperimentMode inputMode,
+        const InputRuntimeStats& inputStats,
+        bool stressTestEnabled,
+        const std::string& statusMessage,
+        bool menu,
         bool paused,
         bool gameOver) const;
 

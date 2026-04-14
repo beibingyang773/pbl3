@@ -2,11 +2,14 @@
 
 #include <string>
 
-#include "Food.h"
-#include "Input.h"
-#include "Renderer.h"
-#include "SaveSystem.h"
-#include "Snake.h"
+#include "core/GameLoop.h"
+#include "core/StateMachine.h"
+#include "gameplay/Food.h"
+#include "gameplay/Snake.h"
+#include "persistence/SaveSystem.h"
+#include "systems/InputSystem.h"
+#include "systems/RenderSystem.h"
+#include "systems/TimeSystem.h"
 
 class Game {
 public:
@@ -14,36 +17,31 @@ public:
     void Run();
 
 private:
-    enum class Status {
-        Start,
-        Running,
-        Paused,
-        GameOver,
-        Quit
-    };
-
     int width_;
     int height_;
     std::string saveFile_;
 
+    GameLoop gameLoop_;
     Snake snake_;
     Food food_;
-    Renderer renderer_;
-    Input input_;
+    RenderSystem renderSystem_;
+    InputSystem inputSystem_;
+    TimeSystem timeSystem_;
+    StateMachine stateMachine_;
     SaveSystem saveSystem_;
 
     int score_ = 0;
-    Status status_ = Status::Start;
+    std::string statusMessage_;
+    int statusMessageFrames_ = 0;
 
     void ProcessInput();
     void Update();
     void Render();
+    void TickUpdate();
 
     bool HitsWall(const Point& p) const;
     void Reset();
-    int GetDifficultyLevel() const;
-    std::string GetDifficultyName() const;
-    int GetFrameDelayMs() const;
+    void SetStatusMessage(const std::string& message, int showFrames);
 
     GameState BuildState() const;
     bool ApplyState(const GameState& state);

@@ -1,0 +1,74 @@
+[
+{
+  "directory": "D:/GameDesign/pbl3/build",
+  "command": "C:\\Appzijian\\MinGW\\winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2\\bin\\g++.exe  @CMakeFiles/SnakeGame.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\SnakeGame.dir\\src\\main.cpp.obj -c D:\\GameDesign\\pbl3\\SnakeGame\\src\\main.cpp",
+  "file": "D:/GameDesign/pbl3/SnakeGame/src/main.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/main.cpp.obj"
+},
+{
+  "directory": "D:/GameDesign/pbl3/build",
+  "command": "C:\\Appzijian\\MinGW\\winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2\\bin\\g++.exe  @CMakeFiles/SnakeGame.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\SnakeGame.dir\\src\\Game.cpp.obj -c D:\\GameDesign\\pbl3\\SnakeGame\\src\\Game.cpp",
+  "file": "D:/GameDesign/pbl3/SnakeGame/src/Game.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/Game.cpp.obj"
+},
+{
+  "directory": "D:/GameDesign/pbl3/build",
+  "command": "C:\\Appzijian\\MinGW\\winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2\\bin\\g++.exe  @CMakeFiles/SnakeGame.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\SnakeGame.dir\\src\\core\\GameLoop.cpp.obj -c D:\\GameDesign\\pbl3\\SnakeGame\\src\\core\\GameLoop.cpp",
+  "file": "D:/GameDesign/pbl3/SnakeGame/src/core/GameLoop.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/core/GameLoop.cpp.obj"
+},
+{
+  "directory": "D:/GameDesign/pbl3/build",
+  "command": "C:\\Appzijian\\MinGW\\winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2\\bin\\g++.exe  @CMakeFiles/SnakeGame.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\SnakeGame.dir\\src\\core\\StateMachine.cpp.obj -c D:\\GameDesign\\pbl3\\SnakeGame\\src\\core\\StateMachine.cpp",
+  "file": "D:/GameDesign/pbl3/SnakeGame/src/core/StateMachine.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/core/StateMachine.cpp.obj"
+},
+{
+  "directory": "D:/GameDesign/pbl3/build",
+  "command": "C:\\Appzijian\\MinGW\\winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2\\bin\\g++.exe  @CMakeFiles/SnakeGame.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\SnakeGame.dir\\src\\gameplay\\Snake.cpp.obj -c D:\\GameDesign\\pbl3\\SnakeGame\\src\\gameplay\\Snake.cpp",
+  "file": "D:/GameDesign/pbl3/SnakeGame/src/gameplay/Snake.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/gameplay/Snake.cpp.obj"
+},
+{
+  "directory": "D:/GameDesign/pbl3/build",
+  "command": "C:\\Appzijian\\MinGW\\winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2\\bin\\g++.exe  @CMakeFiles/SnakeGame.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\SnakeGame.dir\\src\\gameplay\\Food.cpp.obj -c D:\\GameDesign\\pbl3\\SnakeGame\\src\\gameplay\\Food.cpp",
+  "file": "D:/GameDesign/pbl3/SnakeGame/src/gameplay/Food.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/gameplay/Food.cpp.obj"
+},
+{
+  "directory": "D:/GameDesign/pbl3/build",
+  "command": "C:\\Appzijian\\MinGW\\winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2\\bin\\g++.exe  @CMakeFiles/SnakeGame.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\SnakeGame.dir\\src\\Renderer.cpp.obj -c D:\\GameDesign\\pbl3\\SnakeGame\\src\\Renderer.cpp",
+  "file": "D:/GameDesign/pbl3/SnakeGame/src/Renderer.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/Renderer.cpp.obj"
+},
+{
+  "directory": "D:/GameDesign/pbl3/build",
+  "command": "C:\\Appzijian\\MinGW\\winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2\\bin\\g++.exe  @CMakeFiles/SnakeGame.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\SnakeGame.dir\\src\\Input.cpp.obj -c D:\\GameDesign\\pbl3\\SnakeGame\\src\\Input.cpp",
+  "file": "D:/GameDesign/pbl3/SnakeGame/src/Input.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/Input.cpp.obj"
+},
+{
+  "directory": "D:/GameDesign/pbl3/build",
+  "command": "C:\\Appzijian\\MinGW\\winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2\\bin\\g++.exe  @CMakeFiles/SnakeGame.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\SnakeGame.dir\\src\\persistence\\SaveSystem.cpp.obj -c D:\\GameDesign\\pbl3\\SnakeGame\\src\\persistence\\SaveSystem.cpp",
+  "file": "D:/GameDesign/pbl3/SnakeGame/src/persistence/SaveSystem.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/persistence/SaveSystem.cpp.obj"
+},
+{
+  "directory": "D:/GameDesign/pbl3/build",
+  "command": "C:\\Appzijian\\MinGW\\winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2\\bin\\g++.exe  @CMakeFiles/SnakeGame.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\SnakeGame.dir\\src\\systems\\InputSystem.cpp.obj -c D:\\GameDesign\\pbl3\\SnakeGame\\src\\systems\\InputSystem.cpp",
+  "file": "D:/GameDesign/pbl3/SnakeGame/src/systems/InputSystem.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/systems/InputSystem.cpp.obj"
+},
+{
+  "directory": "D:/GameDesign/pbl3/build",
+  "command": "C:\\Appzijian\\MinGW\\winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2\\bin\\g++.exe  @CMakeFiles/SnakeGame.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\SnakeGame.dir\\src\\systems\\RenderSystem.cpp.obj -c D:\\GameDesign\\pbl3\\SnakeGame\\src\\systems\\RenderSystem.cpp",
+  "file": "D:/GameDesign/pbl3/SnakeGame/src/systems/RenderSystem.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/systems/RenderSystem.cpp.obj"
+},
+{
+  "directory": "D:/GameDesign/pbl3/build",
+  "command": "C:\\Appzijian\\MinGW\\winlibs-x86_64-posix-seh-gcc-14.2.0-mingw-w64ucrt-12.0.0-r2\\bin\\g++.exe  @CMakeFiles/SnakeGame.dir/includes_CXX.rsp -g -std=c++17 -o CMakeFiles\\SnakeGame.dir\\src\\systems\\TimeSystem.cpp.obj -c D:\\GameDesign\\pbl3\\SnakeGame\\src\\systems\\TimeSystem.cpp",
+  "file": "D:/GameDesign/pbl3/SnakeGame/src/systems/TimeSystem.cpp",
+  "output": "CMakeFiles/SnakeGame.dir/src/systems/TimeSystem.cpp.obj"
+}
+]

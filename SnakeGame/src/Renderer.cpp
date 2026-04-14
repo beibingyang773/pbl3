@@ -35,8 +35,13 @@ void Renderer::Draw(
     const Snake& snake,
     const Point& food,
     int score,
-    int difficultyLevel,
-    const std::string& difficultyName,
+    int speedLevel,
+    const std::string& speedName,
+    InputExperimentMode inputMode,
+    const InputRuntimeStats& inputStats,
+    bool stressTestEnabled,
+    const std::string& statusMessage,
+    bool menu,
     bool paused,
     bool gameOver) const {
     constexpr int hudWidth = 28;
@@ -68,9 +73,9 @@ void Renderer::Draw(
         DrawCell(buffer, hudStartX + static_cast<int>(i), 2, scoreLine[i]);
     }
 
-    const std::string difficultyLine = "Lv" + std::to_string(difficultyLevel) + "-" + difficultyName;
-    for (size_t i = 0; i < difficultyLine.size() && hudStartX + static_cast<int>(i) < frameW; ++i) {
-        DrawCell(buffer, hudStartX + static_cast<int>(i), 3, difficultyLine[i]);
+    const std::string speedLine = "Speed L" + std::to_string(speedLevel) + "-" + speedName;
+    for (size_t i = 0; i < speedLine.size() && hudStartX + static_cast<int>(i) < frameW; ++i) {
+        DrawCell(buffer, hudStartX + static_cast<int>(i), 3, speedLine[i]);
     }
 
     const std::string pauseLine = "[P] Pause";
@@ -93,6 +98,70 @@ void Renderer::Draw(
         DrawCell(buffer, hudStartX + static_cast<int>(i), 8, quitLine[i]);
     }
 
+    const std::string startLine = "[Enter] Start/Restart";
+    for (size_t i = 0; i < startLine.size() && hudStartX + static_cast<int>(i) < frameW; ++i) {
+        DrawCell(buffer, hudStartX + static_cast<int>(i), 9, startLine[i]);
+    }
+
+    const std::string modeHintLine = "[1]Direct [2]Queue [3]Latest";
+    for (size_t i = 0; i < modeHintLine.size() && hudStartX + static_cast<int>(i) < frameW; ++i) {
+        DrawCell(buffer, hudStartX + static_cast<int>(i), 10, modeHintLine[i]);
+    }
+
+    std::string modeName = "Latest";
+    if (inputMode == InputExperimentMode::DirectInput) {
+        modeName = "Direct";
+    } else if (inputMode == InputExperimentMode::InputQueue) {
+        modeName = "Queue";
+    }
+
+    const std::string modeLine = "InputMode: " + modeName;
+    for (size_t i = 0; i < modeLine.size() && hudStartX + static_cast<int>(i) < frameW; ++i) {
+        DrawCell(buffer, hudStartX + static_cast<int>(i), 11, modeLine[i]);
+    }
+
+    const std::string stressLine = std::string("[T] Stress: ") + (stressTestEnabled ? "On" : "Off");
+    for (size_t i = 0; i < stressLine.size() && hudStartX + static_cast<int>(i) < frameW; ++i) {
+        DrawCell(buffer, hudStartX + static_cast<int>(i), 12, stressLine[i]);
+    }
+
+    const std::string statLine1 =
+        "In/A/R " + std::to_string(inputStats.directionReadCount) + "/" +
+        std::to_string(inputStats.directionAcceptedCount) + "/" +
+        std::to_string(inputStats.directionRejectedCount);
+    for (size_t i = 0; i < statLine1.size() && hudStartX + static_cast<int>(i) < frameW; ++i) {
+        DrawCell(buffer, hudStartX + static_cast<int>(i), 14, statLine1[i]);
+    }
+
+    const std::string statLine2 =
+        "Q e/x/d " + std::to_string(inputStats.queueEnqueuedCount) + "/" +
+        std::to_string(inputStats.queueExecutedCount) + "/" +
+        std::to_string(inputStats.queueDroppedCount);
+    for (size_t i = 0; i < statLine2.size() && hudStartX + static_cast<int>(i) < frameW; ++i) {
+        DrawCell(buffer, hudStartX + static_cast<int>(i), 15, statLine2[i]);
+    }
+
+    const std::string statLine3 =
+        "Q now/avg " + std::to_string(inputStats.queueCurrentSize) + "/" +
+        std::to_string(inputStats.queueAverageSize) +
+        " lag " + std::to_string(inputStats.lastAppliedDelayFrames);
+    for (size_t i = 0; i < statLine3.size() && hudStartX + static_cast<int>(i) < frameW; ++i) {
+        DrawCell(buffer, hudStartX + static_cast<int>(i), 16, statLine3[i]);
+    }
+
+    const std::string statLine4 =
+        "Stress inj " + std::to_string(inputStats.stressInjectedCount) +
+        " modeSw " + std::to_string(inputStats.modeSwitchCount);
+    for (size_t i = 0; i < statLine4.size() && hudStartX + static_cast<int>(i) < frameW; ++i) {
+        DrawCell(buffer, hudStartX + static_cast<int>(i), 17, statLine4[i]);
+    }
+
+    if (!statusMessage.empty()) {
+        for (size_t i = 0; i < statusMessage.size() && hudStartX + static_cast<int>(i) < frameW; ++i) {
+            DrawCell(buffer, hudStartX + static_cast<int>(i), 13, statusMessage[i]);
+        }
+    }
+
     const auto& body = snake.GetBody();
     for (size_t i = 0; i < body.size(); ++i) {
         const char bodyChar = (i == 0) ? '@' : 'o';
@@ -100,6 +169,15 @@ void Renderer::Draw(
     }
 
     DrawCell(buffer, food.x, food.y + 1, '*');
+
+    if (menu) {
+        const std::string msg = "SNAKE - Press Enter to Start";
+        const int startX = std::max(1, (gameAreaW - static_cast<int>(msg.size())) / 2);
+        const int y = height_ / 2 + 1;
+        for (size_t i = 0; i < msg.size() && startX + static_cast<int>(i) < gameAreaW - 1; ++i) {
+            DrawCell(buffer, startX + static_cast<int>(i), y, msg[i]);
+        }
+    }
 
     if (paused) {
         const std::string msg = "PAUSED";

@@ -1,15 +1,21 @@
 #pragma once
 
 #include <optional>
+#include <vector>
 
-#include "Snake.h"
+#include "gameplay/Snake.h"
 
 enum class InputAction {
     None = 0,
     Quit,
     TogglePause,
     Save,
-    Load
+    Load,
+    StartOrRestart,
+    SetDirectInput,
+    SetInputQueue,
+    SetLatestOverride,
+    ToggleStressTest
 };
 
 struct InputEvent {
@@ -19,5 +25,7 @@ struct InputEvent {
 
 class Input {
 public:
-    InputEvent Poll() const;
+    std::vector<InputEvent> PollAll() const;
+
+    static bool IsOpposite(Direction a, Direction b);
 };
